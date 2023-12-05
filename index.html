@@ -1,47 +1,84 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Results summary component</title>
 
+  <title>Frontend Mentor | Results summary component</title>
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
+    .attribution {
+      font-size: 11px;
+      text-align: center;
+    }
+
+    .attribution a {
+      color: hsl(228, 45%, 44%);
+    }
   </style>
+  <!--CSS-->
+  <link rel="stylesheet" href="styles/styles.css">
+  <!--Google Font-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@500&display=swap" rel="stylesheet">
 </head>
+
 <body>
+  <h1>Results summary component</h1>
+  <section class="contenedor-section">
+    <div class="result">
+      <h2>Your Result</h2>
+      <div class="circle">
+        <p class="your-value">76</p>
+        <p class="value-total">of 100</p>
+      </div>
+      <h3>Great</h3>
+      <p>You scored higher than 65% of the people who have taken these tests.</p>
+    </div>
 
-  Your Result
-  76
-  of 100
+    <div class="summary">
+      <h2>Summary</h2>
+      <div class="reaction">
+        <img src="assets/images/icon-reaction.svg" alt="reaccion">
+        <p>Reaction</p>
+          <p class="p-score">80<p class="p-total">/ 100</p></p>
+      </div>
+      
+      <div class="memory">
+        <img src="assets/images/icon-memory.svg" alt="memoria">
+        <p>Memory</p>
+        <p class="p-score">92<p class="p-total">/ 100</p></p>
+      </div>
+     
+      <div class="verbal">
+        <img src="assets/images/icon-verbal.svg" alt="verbal">
+        <p>Verbal</p>
+        <p class="p-score">61<p class="p-total">/ 100</p></p>
+      </div>
 
-  Great
-  You scored higher than 65% of the people who have taken these tests.
-  
-  Summary
+      <div class="visual">
+        <img src="assets/images/icon-visual.svg" alt="visual">
+        <p>Vsual</p>
+        <p class="p-score">72<p class="p-total">/ 100</p></p>
+      </div>
 
-  Reaction
-  80 / 100
+      <div class="continue">
+        <button class="btn-continue">Continue</button>
+      </div>
 
-  Memory
-  92 / 100
+    </div>
 
-  Verbal
-  61 / 100
+  </section>
 
-  Visual
-  72 / 100
-
-  Continue
-  
   <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+    Coded by <a href="https://www.linkedin.com/in/sergio-ariel-cordoba" target="_blank">Sergio Cordoba</a>.
   </div>
 </body>
+
 </html>
